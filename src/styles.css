@@ -1,0 +1,21 @@
+.button{
+    display: inline-block;
+    margin: 5px;
+    background-color:rgb(1, 1, 26);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.button-content{ 
+    font-size: 1em;
+    margin: 0;
+    color: chocolate;
+    font-weight: bolder;
+}
+
+.title{
+    font-size: 2em;
+    background-color: rgb(21, 21, 100);
+    color: chartreuse;
+    padding: 2vw;
+}

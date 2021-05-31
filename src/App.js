@@ -1,22 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles.css'
+import ComponentUpdate from './update'
+import ComponentError from './error'
+import ComponentUnmount from './unMounting'
+import Constructor from './Mounting'
+
+
+function Title(props){
+  return (
+    <h1 className = "title"> {props.title}  </h1>
+  )
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Title title = {"ciclo update"}/>
+        <ComponentUpdate/>
+        <Title title = {"ciclo error"}/>
+        <ComponentError/>
+        <Title title= {"Unmounting"}/>
+        <ComponentUnmount />
+        <Title title= {"Ciclo Mounting"}/>
+        <Constructor/>
       </header>
     </div>
   );
